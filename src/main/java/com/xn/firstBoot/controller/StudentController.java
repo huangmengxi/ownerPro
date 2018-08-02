@@ -46,3 +46,4 @@ public class StudentController
         return studentService.insertStudentWithBackId(sname, sex);
     }
 }
+
