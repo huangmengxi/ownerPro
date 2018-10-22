@@ -31,7 +31,9 @@ public class StudentController
     
     @RequestMapping(value="/inserStudent",method= {RequestMethod.POST,RequestMethod.GET})
     public boolean inserStudent(@RequestParam("sname") String sname, @RequestParam("sex") String sex) {
+        System.out.println("冲突冲突学习解决冲突");
         return studentService.inserStudent(sname, sex);
+        System.out.println("冲突冲突学习解决冲突222");
     }
     
     @RequestMapping(value="/insertStudentWithBackId",method=RequestMethod.POST)
