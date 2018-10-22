@@ -40,8 +40,8 @@ public class StudentController
          System.out.println("冲突冲突学习解决冲突3333");
         System.out.println("冲突冲突学习解决冲突4");
         System.out.println("冲突冲突学习解决冲突4");
-        System.out.println("冲突冲突学习解决冲突5");
         System.out.println("冲突冲突学习解决冲突4");
+        System.out.println("冲突冲突学习解决冲突5");
         return studentService.insertStudentWithBackId(sname, sex);
     }
 }
