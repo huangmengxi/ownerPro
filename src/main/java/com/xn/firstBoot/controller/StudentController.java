@@ -38,6 +38,7 @@ public class StudentController
     
     @RequestMapping(value="/insertStudentWithBackId",method=RequestMethod.POST)
     public Student insertStudentWithBackId(@RequestParam("sname") String sname, @RequestParam("sex") String sex){
+        System.out.println("远程修改2");
         return studentService.insertStudentWithBackId(sname, sex);
     }
 }
