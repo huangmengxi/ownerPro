@@ -32,6 +32,7 @@ public class StudentController
     @RequestMapping(value="/inserStudent",method= {RequestMethod.POST,RequestMethod.GET})
     public boolean inserStudent(@RequestParam("sname") String sname, @RequestParam("sex") String sex) {
         System.out.println("本地修改");
+        System.out.println("远程修改");
         return studentService.inserStudent(sname, sex);
     }
     
