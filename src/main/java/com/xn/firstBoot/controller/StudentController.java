@@ -31,15 +31,11 @@ public class StudentController
     
     @RequestMapping(value="/inserStudent",method= {RequestMethod.POST,RequestMethod.GET})
     public boolean inserStudent(@RequestParam("sname") String sname, @RequestParam("sex") String sex) {
-        System.out.println("本地修改");
-        System.out.println("远程修改");
         return studentService.inserStudent(sname, sex);
     }
     
     @RequestMapping(value="/insertStudentWithBackId",method=RequestMethod.POST)
     public Student insertStudentWithBackId(@RequestParam("sname") String sname, @RequestParam("sex") String sex){
-        System.out.println("本地修改2");
-        System.out.println("远程修改2");
         return studentService.insertStudentWithBackId(sname, sex);
     }
 }
